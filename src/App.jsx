@@ -1,12 +1,18 @@
-
+import Header from "./components/Header"
+import Formulario from "./components/Formulario"
+import ListadoPacientes from "./ListadoPacientes"
 function App() {
-  const sumar = ()=>{console.log(2+2)}
-  sumar()
+ 
+ 
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-      <input type="text" />
+   <div className="container mx-auto mt-20">
+    <Header />
+    <div className="mt-12 md:flex mx-auto">
+      <Formulario/>
+      <ListadoPacientes/>
     </div>
+   
+   </div>
   )
 }
 
